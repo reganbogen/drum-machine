@@ -1,0 +1,48 @@
+/* ----------- Drum Page ------------------------ */
+    .drumTitle {
+      font-family: "Press Start 2P", monospace;
+      padding-top: 5%;
+      color: black;
+      text-shadow: 0 0 12px coral, 0 0 40px hotpink;
+    }
+
+    .keys {
+      width: 100vw;
+      display: block;
+      text-align: center;
+      padding-top: 10%;
+    }
+
+    .key {
+      transition: all 0.07s;
+      display: inline-block;
+      background-color: black;
+      border-radius: 4px;
+      border-width: 4px;
+      border-color: coral;
+      border-style: solid;
+      font-family: "Press Start 2P", monospace;
+      color: white;
+    }
+
+    .keydown {
+      transform: scale(0.9);
+      filter: hue-rotate(1440deg);
+      border-color: hotpink;
+      z-index: -1;
+    }
+
+    .letter {
+      font-family: "Press Start 2P", monospace;
+      color: white;
+      font-size: 30px;
+    }
+
+    .drumPage {
+      background: linear-gradient(160deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 20%), linear-gradient(112deg, rgba(238, 225, 36, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(70deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), linear-gradient(-30deg, rgba(248, 135, 6, 0.8), rgba(0, 0, 255, 0) 70.71%), radial-gradient(lawngreen 0%, black 75%);
+      height: 100%;
+    }
+
+    .drumHTML {
+      height: 100%;
+    }

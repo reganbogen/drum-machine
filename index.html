@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="drumHTML" lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My playground">
+    
+    <link rel="preload" href="js/drum.js" as="script">
+    <link rel="preload" href="sounds/hihat.mp3" as="audio">
+    <link rel="preload" href="sounds/boom.mp3" as="audio">
+    <link rel="preload" href="sounds/openhat.mp3" as="audio">
+    <link rel="preload" href="sounds/Boom2.mp3" as="audio">
+    <link rel="preload" href="sounds/CongaLo.mp3" as="audio">
+    <link rel="preload" href="sounds/Snare.mp3" as="audio">
+    <link rel="preload" href="sounds/Snare2.mp3" as="audio">
+    <link rel="preload" href="sounds/CongaHi.mp3" as="audio">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    
+    <title>Drum Machine</title>  
+  </head>
+  <body class="drumPage">
+    <div class="container drumTitle">
+      <a href="index.html" style="text-decoration: none; color: black;"><h1 style="text-align:center">WURLITZER DRUM MACHINE</h1></a>
+    </div>
+    <div class="keys container">
+      <div class="row">
+        <div class="key col" id="A" onClick="clickHandler('A')"><div class="letter">A</div>Clave</div>
+        <div class="key col" id="S" onClick="clickHandler('S')"><div class="letter">S</div>hiHat</div>
+        <div class="key col" id="D" onClick="clickHandler('D')"><div class="letter">D</div>BOOM</div>
+        <div class="key col" id="F" onClick="clickHandler('F')"><div class="letter">F</div>openHat</div>
+      </div>
+      <div class="row">
+        <div class="key col" id="G" onClick="clickHandler('G')"><div class="letter">G</div>BOOM2</div>
+        <div class="key col" id="H" onClick="clickHandler('H')"><div class="letter">H</div>CongaLo</div>
+        <div class="key col" id="J" onClick="clickHandler('J')"><div class="letter">J</div>Snare</div>
+        <div class="key col" id="K" onClick="clickHandler('K')"><div class="letter">K</div>Snare2</div>
+        <div class="key col" id="L" onClick="clickHandler('L')"><div class="letter">L</div>CongaHi</div>
+      </div>
+    </div>
+    
+    <audio class="notes" data-key="A" src="sounds/Clave.mp3"></audio>
+    <audio class="notes" data-key="S" src="sounds/hihat.mp3"></audio>
+    <audio class="notes" data-key="D" src="sounds/boom.mp3"></audio>
+    <audio class="notes" data-key="F" src="sounds/openhat.mp3"></audio>
+    <audio class="notes" data-key="G" src="sounds/Boom2.mp3"></audio>
+    <audio class="notes" data-key="H" src="sounds/CongaLo.mp3"></audio>
+    <audio class="notes" data-key="J" src="sounds/Snare.mp3"></audio>
+    <audio class="notes" data-key="K" src="sounds/Snare2.mp3"></audio>
+    <audio class="notes" data-key="L" src="sounds/CongaHi.mp3"></audio>
+    
+        <!--scripts-->
+    <script src="drum.js"></script> 
+  </body>
+</html>
